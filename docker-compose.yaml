@@ -1,8 +1,5 @@
-kind: Pod
-metadata:
-  name: sim-rs
-spec:
-  containers:
-  - name: app
+version: '3.8'
+services:
+  app:
     image: docker.io/bwbush/sim-rs-antithesis:latest
-
+    container_name: sim-rs-app
