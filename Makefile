@@ -12,7 +12,7 @@ push:
 	docker push docker.io/bwbush/sim-rs-antithesis:latest
 
 docker: Dockerfile sim-rs entrypoint.py libvoidstar.so config.yaml network.yaml singleton_release.sh singleton_debug.sh
-	docker build -f $< -t docker.io/bwbush/sim-rs-antithesis
+	docker build -f $< -t docker.io/bwbush/sim-rs-antithesis .
 
 clean:
 	rm -r sim-rs config.yaml network.yaml
