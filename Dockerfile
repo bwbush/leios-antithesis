@@ -1,5 +1,5 @@
 # Build with a pinned version of "rust:latest"
-FROM 764b84273d2b AS builder
+FROM rust:latest AS builder
 
 WORKDIR /usr/src/app
 

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export RUST_BACKTRACE=1
+
 /usr/local/bin/sim-cli-release \
   --slots 120 \
   --conformance-events \
